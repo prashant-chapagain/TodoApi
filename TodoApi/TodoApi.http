@@ -1,0 +1,40 @@
+﻿@TodoApi_HostAddress = https://localhost:7232
+
+POST {{TodoApi_HostAddress}}/todoitems
+Content-Type:application/json
+
+
+{
+  "name":"Clean Room",
+  "isComplete":true
+}
+
+
+###
+
+GET {{TodoApi_HostAddress}}/todoitems
+
+###
+
+GET {{TodoApi_HostAddress}}/todoitems/complete
+
+###
+
+GET {{TodoApi_HostAddress}}/todoitems/1
+
+###
+
+PUT {{TodoApi_HostAddress}}/todoitems/1
+Content-Type:application/json
+
+
+{
+  "name":"Cook Food",
+  "isComplete":false
+}
+
+###
+
+DELETE {{TodoApi_HostAddress}}/todoitems/1
+
+###
